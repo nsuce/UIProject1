@@ -5,7 +5,6 @@ const RecipeDetail = ({ recipe, onClose }) => {
     return null;
   }
 
-  // Split the instructions into an array of steps
   const instructionSteps = recipe.instructions.split('\n').filter((step) => step.trim() !== '');
 
   return (

@@ -66,15 +66,14 @@
   width: 80%;
   overflow-y: auto;
   height: 80%;
-  margin: 0 auto; /* Center the pop-up horizontally */
-  color: #000; /* Default text color */
+  margin: 0 auto;
+  color: #000;
 }
 
-/* Styles for dark mode */
 @media (prefers-color-scheme: dark) {
   .recipe-detail-content {
-    background-color: #222; /* Dark background color */
-    color: #fff; /* White text color */
+    background-color: #222;
+    color: #fff;
   }
 }
 
@@ -128,11 +127,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  flex-direction: column; /* Updated to column layout */
-  align-items: center; /* Center content horizontally */
+  flex-direction: column;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
-  padding-top: 20px; /* Add padding to push content below header */
+  padding-top: 20px;
 }
 
 h1 {
@@ -174,24 +173,22 @@ button:focus-visible {
 
 .header {
   width: 100%;
-  max-width: 600px; /* Adjust the maximum width as needed */
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align content to the left */
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 
-/* Updated styles for the search bar and sort options */
 .search-and-sort {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap; 
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 600px; /* Adjust the maximum width as needed */
+  max-width: 600px; 
 }
 
-/* Style for the timer button */
 .timer-button button {
   background-color: #007bff;
   color: #fff;
@@ -199,12 +196,11 @@ button:focus-visible {
   cursor: pointer;
   padding: 5px 10px;
   font-size: 1rem;
-  margin-bottom: 10px; /* Add margin to separate timer from sort options */
+  margin-bottom: 10px;
 }
 
-/* Add some margin to separate the search bar and sort options */
 .search-bar {
-  flex-grow: 1; /* Adjust the flex-grow value to make it expand */
+  flex-grow: 1;
   padding: 10px;
   margin-right: 10px;
 }
@@ -216,5 +212,5 @@ button:focus-visible {
 }
 
 .sort-options label {
-  margin-right: 10px; /* Add some space between the label and the select */
+  margin-right: 10px;
 }

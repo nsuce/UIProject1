@@ -21,7 +21,7 @@ const RecipeList = ({ recipes }) => {
         <div
           key={recipe.id}
           className="recipe-card"
-          onClick={() => openRecipeDetails(recipe)} // Add onClick here
+          onClick={() => openRecipeDetails(recipe)}
         >
           <div className="recipe-info">
             <h3>{recipe.name}</h3>

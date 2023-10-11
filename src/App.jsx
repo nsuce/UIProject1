@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import RecipeList from './components/recipelist';
+import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 import SearchBar from './components/SearchBar';
 import TimerPopup from './components/TimerPopup';

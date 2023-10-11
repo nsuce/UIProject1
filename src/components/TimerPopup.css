@@ -1,4 +1,3 @@
-/* Default (light mode) styles */
 .timer-popup {
     position: fixed;
     top: 50%;
@@ -8,7 +7,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    width: 400px; /* Increase the width as needed */
+    width: 400px;
     text-align: center;
   }
   
@@ -46,7 +45,7 @@
   
   .timer-buttons {
     display: flex;
-    justify-content: space-between; /* Separate buttons evenly */
+    justify-content: space-between;
     margin-top: 10px;
   }
   
@@ -55,21 +54,18 @@
   .reset-button,
   .close-button {
     padding: 10px 20px;
-    flex-grow: 1; /* Make buttons equally wide */
+    flex-grow: 1;
   }
   
-  /* Dark mode styles */
   @media (prefers-color-scheme: dark) {
     .timer-popup {
       background-color: #333;
       color: #fff;
     }
-  
-    /* Add other dark mode styles here */
   }
 
   .timer-message {
-    color: #ff0000; /* Red color for attention */
-    font-size: 24px; /* Increase font size for visibility */
-    margin-top: 10px; /* Add some space below the timer display */
+    color: #ff0000;
+    font-size: 24px;
+    margin-top: 10px;
   }

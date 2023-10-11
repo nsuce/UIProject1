@@ -6,7 +6,7 @@ const TimerPopup = ({ onClose }) => {
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
-  const [timerMessage, setTimerMessage] = useState(''); // Initialize as an empty string
+  const [timerMessage, setTimerMessage] = useState('');
 
   useEffect(() => {
     let interval;
@@ -44,7 +44,7 @@ const TimerPopup = ({ onClose }) => {
   const handleStart = () => {
     if (hours > 0 || minutes > 0 || seconds > 0) {
       setIsRunning(true);
-      setTimerMessage(''); // Clear the message when the timer starts
+      setTimerMessage('');
     }
   };
 
