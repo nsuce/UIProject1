@@ -4,6 +4,7 @@
 }
 
 .recipe-card {
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,6 +59,7 @@
   z-index: 1000;
 }
 
+
 .recipe-detail-content {
   background-color: #fff;
   padding: 20px;
@@ -68,6 +70,25 @@
   height: 80%;
   margin: 0 auto;
   color: #000;
+
+  border: 3px solid #ccc;
+}
+
+.recipe-detail-content h3 {
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.recipe-detail-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.recipe-detail-content p {
+  margin-bottom: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -125,6 +146,7 @@ a:hover {
 }
 
 body {
+  background-color: #bfedd4;
   margin: 0;
   display: flex;
   flex-direction: column;
