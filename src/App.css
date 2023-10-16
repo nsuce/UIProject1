@@ -277,3 +277,12 @@ button:focus-visible {
 .menu-options.visible {
   display: block;
 }
+
+.menu-options div {
+  padding: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-options div:last-child {
+  border-bottom: none;
+}
