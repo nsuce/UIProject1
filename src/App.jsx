@@ -12,6 +12,7 @@ const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortMethod, setSortMethod] = useState('default');
   const [isTimerPopupVisible, setTimerPopupVisible] = useState(false);
+  const [isMenuVisible, setMenuVisible] = useState(false);
 
   const showRecipeDetail = (recipe) => {
     setSelectedRecipe(recipe);
@@ -23,6 +24,16 @@ const App = () => {
 
   const handleTimerButtonClick = () => {
     setTimerPopupVisible(true);
+  };
+
+  const toggleMenu = (e) => {
+    e.stopPropagation();
+    setMenuVisible(!isMenuVisible);
+  };
+
+  const closeMenu = (e) => {
+    e.stopPropagation();
+    setMenuVisible(false);
   };
 
   let filteredRecipes = recipes.filter((recipe) =>
@@ -40,12 +51,23 @@ const App = () => {
   }
 
   return (
-    <div className="App">
+    <div className="App" onClick={closeMenu}>
       <div className="header">
         <h1>Smart Cookbook</h1>
         <div className="search-and-sort">
-          <div className="timer-button">
-            <button onClick={handleTimerButtonClick}>Set Timer</button>
+          <div
+            className={`menu-button ${isMenuVisible ? 'active' : ''}`}
+            onClick={toggleMenu}
+          >
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+          <div className={`menu-options ${isMenuVisible ? 'visible' : ''}`}>
+            <div>Recipe Search</div>
+            <div>Favorite Recipes</div>
+            <div onClick={handleTimerButtonClick}>Set Timer</div>
+            <div>Connected Appliances</div>
           </div>
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
           <div className="sort-options">
